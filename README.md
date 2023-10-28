@@ -3,11 +3,26 @@ This GUI automates the whole calibration process also shows results of the calib
  
 # Usage
 ## Operation Tab
+One can automate the whole calibration process using this tab. This tab allows to operate
+the calibration process step by step and also shows results on the user interface. 
 <p align="center">
   <img src="Images/gui1.gif" width="700"/>
   <img src="Images/ex_viz1.gif" width="350"/>
   <img src="Images/ex_viz2.gif" width="350"/>
  </p>
+
+Following is the description of the features of Operation tab:
+- **Select Directory**: ’Directory’ button is for loading a directory with camera image
+folders and calibration object configuration file.
+- **Initialization**: If ’Start Calculation’ button is pressed, then one python program
+will start to calculate the initial camera and board parameters. After finishing the
+calculation, one completion message will pop up in the info tab. If ’Show Camera
+Poses’ button is pressed, one can visualize all the groups. Next,
+one can select a master camera to perform the bundle adjustment calculation.
+- **Bundle Adjustment**: If ’Start Calculation’ button is pressed, then one python
+program will start to calculate the final camera and board parameters. By pressing
+”Show Final Camera poses”, one can visualize final camera poses.
+- **Results**: This portion will show final calibration results.
  
 ## Overview Tab
 This tab provides a comprehensive dataset overview, presenting key information in a table
